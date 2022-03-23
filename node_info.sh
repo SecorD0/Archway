@@ -133,7 +133,7 @@ main() {
 	fi
 	
 	# Actions
-	sudo apt install bc -y &>/dev/null
+	sudo apt install jq bc -y &>/dev/null
 	if [ -n "$wallet_name" ] && ([ ! -n "$wallet_address" ] || [ ! -n "$validator_address" ]); then
 		printf "$t_ewa"
 		local password
