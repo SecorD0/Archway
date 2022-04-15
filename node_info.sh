@@ -53,7 +53,7 @@ done
 
 # Config
 daemon="`which archwayd`"
-token_name="august"
+token_name="torii"
 node_dir="$HOME/.archway/"
 wallet_name="$archway_wallet_name"
 wallet_address="$archway_wallet_address"
