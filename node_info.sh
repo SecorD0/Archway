@@ -65,9 +65,9 @@ if [ "$network" == "mainnet" ]; then
 	explorer_url_template=""
 	current_block=`echo`
 else
-	global_rpc="http://62.171.175.162:26657/"
-	explorer_url_template="https://explorer.augusta-1.archway.tech/validator/"
-	current_block=`wget -qO- "${global_rpc}abci_info" | jq -r ".result.response.last_block_height"`
+	global_rpc="https://archway-test.postcapitalist.io/blocks/latest"
+	explorer_url_template="https://testnet.postcapitalist.io/Archway/account/"
+	current_block=`wget -qO- "$global_rpc" | jq -r ".block.header.height"`
 fi
 
 # Functions
