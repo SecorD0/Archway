@@ -66,7 +66,7 @@ if [ "$network" == "mainnet" ]; then
 	current_block=`echo`
 else
 	global_rpc="https://archway-test.postcapitalist.io/blocks/latest"
-	explorer_url_template="https://testnet.postcapitalist.io/Archway/account/"
+	explorer_url_template="https://testnet.postcapitalist.io/Archway/staking/"
 	current_block=`wget -qO- "$global_rpc" | jq -r ".block.header.height"`
 fi
 
